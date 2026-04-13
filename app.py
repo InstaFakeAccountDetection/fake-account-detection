@@ -34,7 +34,7 @@ if st.button("Analyze Account"):
 
     profile_pic = 1 if profile_pic == "Yes" else 0
 
-    # 🔥 Extract features from username
+    #  Extract features from username
     username_length = len(username)
     digit_count = sum(c.isdigit() for c in username)
     nums_username = digit_count / (username_length + 1)
@@ -46,7 +46,7 @@ if st.button("Analyze Account"):
     external_url = 0
     private = 0
 
-    # 🔥 Feature Engineering
+    # Feature Engineering
     ff_ratio = followers / (follows + 1)
     posts_per_follower = posts / (followers + 1)
     has_description = 1 if description_length > 0 else 0
